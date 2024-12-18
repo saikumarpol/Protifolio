@@ -1,19 +1,20 @@
 import React from 'react';
-import { Card, CardContent, Typography, Grid } from '@mui/material';
+import { Card, CardContent, Typography, Grid, Box } from '@mui/material';
 import CodeIcon from '@mui/icons-material/Code';
+import { useTheme } from '@mui/material/styles';
 
 // Dummy projects data
 const projects = [
   {
     title: 'Student Club Dashboard',
-    description: 'A student management system where students, faculty, and core team can explore projects, discuss topics, manage profiles, join, collaborate, and contribute to the student community.',
+    description: 'A student management system enabling students, faculty, and core teams to explore projects, manage profiles, and collaborate within the community.',
     role: 'Developer',
     technologies: 'React.js, Node.js, Express, MongoDB',
     image: 'https://via.placeholder.com/300x200?text=Student+Club+Dashboard',
   },
   {
     title: 'Safe Zone',
-    description: 'An application to find nearby hospitals with available beds and oxygen, making the process easier for those in need.',
+    description: 'An application to help users find nearby hospitals and check the availability of beds and oxygen during emergencies.',
     role: 'Team Lead',
     technologies: 'HTML, CSS, Django',
     image: 'https://via.placeholder.com/300x200?text=Safe+Zone',
@@ -42,6 +43,8 @@ const projects = [
 ];
 
 const Projects = () => {
+  const theme = useTheme();  // Get the current theme (dark or light)
+
   return (
     <section id="projects" style={{ padding: '4rem 0' }}>
       <Typography variant="h4" align="center" gutterBottom>
@@ -50,22 +53,38 @@ const Projects = () => {
       <Grid container spacing={3} justifyContent="center">
         {projects.map((project, index) => (
           <Grid item key={index} xs={12} sm={6} md={4}>
-            <Card sx={{ transition: '0.3s', '&:hover': { boxShadow: 10 }, borderRadius: '8px', bgcolor: '#ffffff' }}>
-              <img
+            <Card 
+              sx={{ 
+                transition: '0.3s', 
+                '&:hover': { boxShadow: 10 }, 
+                borderRadius: '8px',
+                bgcolor: theme.palette.background.paper,
+                color: theme.palette.text.primary,
+              }}
+            >
+              <Box 
+                component="img"
                 src={project.image}
                 alt={project.title}
-                style={{ borderRadius: '8px 8px 0 0', width: '100%', height: '200px', objectFit: 'cover' }}
+                sx={{ 
+                  borderRadius: '8px 8px 0 0', 
+                  width: '100%', 
+                  height: '200px', 
+                  objectFit: 'cover' 
+                }}
               />
               <CardContent>
-                <Typography variant="h6" color="#1976d2">
+                <Typography variant="h6" color={theme.palette.primary.main}>
                   <CodeIcon sx={{ verticalAlign: 'middle', marginRight: '8px' }} />
                   {project.title}
                 </Typography>
-                <Typography variant="body2">{project.description}</Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color={theme.palette.text.secondary}>
+                  {project.description}
+                </Typography>
+                <Typography variant="body2" color={theme.palette.text.secondary}>
                   Role: {project.role}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color={theme.palette.text.secondary}>
                   Technologies: {project.technologies}
                 </Typography>
               </CardContent>

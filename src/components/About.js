@@ -10,7 +10,8 @@ const About = () => {
             About Me
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            A tech enthusiast with a strong foundation in Data Structures and Algorithms. I am passionate about coding and eager to learn new technologies quickly.
+          A tech enthusiast with a strong foundation in Data Structures and Algorithms. Experienced in developing and debugging code with the ability to quickly learn and master new technologies. Proficient in understanding and translating business requirements into technical solutions. Adept at implementing CI/CD pipelines and deploying scalable applications.
+
           </Typography>
         </CardContent>
       </Card>
