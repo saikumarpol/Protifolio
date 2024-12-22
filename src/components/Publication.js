@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Box, Grid, Link } from '@mui/material';
+import { Typography, Box,  Link } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
 const publications = [

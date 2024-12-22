@@ -8,7 +8,7 @@ import Skills from './components/Skills';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import { ThemeProvider, useTheme } from './ThemeContext';
-import Header from './components/Header';
+
 import Publication from './components/Publication';
 
 function App() {

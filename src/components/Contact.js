@@ -19,22 +19,22 @@ const Contact = () => {
           Follow me on:
         </Typography>
         <Box sx={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-          <Link href="https://twitter.com/your-twitter" target="_blank" rel="noopener noreferrer">
+          <Link href="https://x.com/polasaikumar3?s=11" target="_blank" rel="noopener noreferrer">
             <Button variant="outlined" color="primary" startIcon={<FaTwitter />}>
               Twitter
             </Button>
           </Link>
-          <Link href="https://www.instagram.com/your-insta" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.instagram.com/thisz__chinnu/" target="_blank" rel="noopener noreferrer">
             <Button variant="outlined" color="primary" startIcon={<FaInstagram />}>
               Instagram
             </Button>
           </Link>
-          <Link href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+          <Link href="https://github.com/saikumarpol" target="_blank" rel="noopener noreferrer">
             <Button variant="outlined" color="primary" startIcon={<FaGithub />}>
               GitHub
             </Button>
           </Link>
-          <Link href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.linkedin.com/in/sai-kumar-pola-3993851a1/" target="_blank" rel="noopener noreferrer">
             <Button variant="outlined" color="primary" startIcon={<FaLinkedin />}>
               LinkedIn
             </Button>

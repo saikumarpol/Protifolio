@@ -40,16 +40,20 @@ const WorkExperience = () => {
           <Grid item key={index} xs={12} sm={6} md={4}>
             <Box
               sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
                 padding: '2rem',
                 borderRadius: '16px',
                 bgcolor: theme.palette.background.paper,
                 boxShadow: theme.shadows[3],
-                border: `1px solid ${theme.palette.divider}`, // Added border
+                border: `1px solid ${theme.palette.divider}`,
                 transition: '0.3s ease',
+                height: '100%', // Ensures all boxes take up equal height
                 '&:hover': {
                   transform: 'translateY(-8px)',
                   boxShadow: theme.shadows[6],
-                  borderColor: theme.palette.primary.main, // Border changes on hover
+                  borderColor: theme.palette.primary.main,
                 },
               }}
             >
@@ -63,7 +67,7 @@ const WorkExperience = () => {
                   borderRadius: '50%',
                   margin: '0 auto 1rem',
                   display: 'block',
-                  border: `2px solid ${theme.palette.primary.main}`, // Added border around the image
+                  border: `2px solid ${theme.palette.primary.main}`,
                 }}
               />
               <Typography variant="h6" color={theme.palette.primary.main} gutterBottom>

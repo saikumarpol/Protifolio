@@ -41,10 +41,16 @@ const Education = () => {
             <Box
               textAlign="center"
               sx={{
+                width: '300px',
+                height: '300px',
                 padding: '1rem',
                 border: `1px solid ${theme.palette.primary.main}`,
                 borderRadius: '20px',
                 bgcolor: theme.palette.background.default,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
                 transition: '0.3s',
                 '&:hover': { bgcolor: theme.palette.action.hover },
               }}
@@ -52,7 +58,12 @@ const Education = () => {
               <img
                 src={edu.image}
                 alt={edu.institution}
-                style={{ width: '100px', height: '100px', borderRadius: '50%' }}
+                style={{
+                  width: '100px',
+                  height: '100px',
+                  borderRadius: '50%',
+                  marginBottom: '1rem',
+                }}
               />
               <Typography variant="h6" color={theme.palette.primary.main}>
                 {edu.degree}

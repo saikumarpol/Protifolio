@@ -43,7 +43,7 @@ const projects = [
 ];
 
 const Projects = () => {
-  const theme = useTheme();  // Get the current theme (dark or light)
+  const theme = useTheme(); // Get the current theme (dark or light)
 
   return (
     <section id="projects" style={{ padding: '4rem 0' }}>
@@ -53,24 +53,28 @@ const Projects = () => {
       <Grid container spacing={3} justifyContent="center">
         {projects.map((project, index) => (
           <Grid item key={index} xs={12} sm={6} md={4}>
-            <Card 
-              sx={{ 
-                transition: '0.3s', 
-                '&:hover': { boxShadow: 10 }, 
+            <Card
+              sx={{
+                transition: '0.3s',
+                '&:hover': { boxShadow: 10 },
                 borderRadius: '8px',
                 bgcolor: theme.palette.background.paper,
                 color: theme.palette.text.primary,
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between', // Align content properly
+                height: '100%', // Make all cards equal height
               }}
             >
-              <Box 
+              <Box
                 component="img"
                 src={project.image}
                 alt={project.title}
-                sx={{ 
-                  borderRadius: '8px 8px 0 0', 
-                  width: '100%', 
-                  height: '200px', 
-                  objectFit: 'cover' 
+                sx={{
+                  borderRadius: '8px 8px 0 0',
+                  width: '100%',
+                  height: '200px',
+                  objectFit: 'cover',
                 }}
               />
               <CardContent>
