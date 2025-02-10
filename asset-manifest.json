@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/Portifolio/static/js/main.b7729fd2.js",
-    "static/media/Badal.png": "/Portifolio/static/media/Badal.3a4857b56e819f2bf22a.png",
-    "static/media/safezone.png": "/Portifolio/static/media/safezone.3fd2a0c505ce362f6516.png",
-    "static/media/wipro.jpg": "/Portifolio/static/media/wipro.001319f84d7f09294a9e.jpg",
-    "static/media/selsca.png": "/Portifolio/static/media/selsca.bb9dd0262f908a340730.png",
-    "static/media/RCTS.png": "/Portifolio/static/media/RCTS.6239f6ed54ce514d2d89.png",
-    "static/media/club.png": "/Portifolio/static/media/club.250c33c4c9eb04166b15.png",
-    "static/media/tabot.png": "/Portifolio/static/media/tabot.c71ab93058a62fd48a23.png",
-    "index.html": "/Portifolio/index.html",
-    "main.b7729fd2.js.map": "/Portifolio/static/js/main.b7729fd2.js.map"
+    "main.js": "/Protifolio/static/js/main.f428729b.js",
+    "static/media/Badal.png": "/Protifolio/static/media/Badal.3a4857b56e819f2bf22a.png",
+    "static/media/safezone.png": "/Protifolio/static/media/safezone.3fd2a0c505ce362f6516.png",
+    "static/media/wipro.jpg": "/Protifolio/static/media/wipro.001319f84d7f09294a9e.jpg",
+    "static/media/selsca.png": "/Protifolio/static/media/selsca.bb9dd0262f908a340730.png",
+    "static/media/RCTS.png": "/Protifolio/static/media/RCTS.6239f6ed54ce514d2d89.png",
+    "static/media/club.png": "/Protifolio/static/media/club.250c33c4c9eb04166b15.png",
+    "static/media/tabot.png": "/Protifolio/static/media/tabot.c71ab93058a62fd48a23.png",
+    "index.html": "/Protifolio/index.html",
+    "main.f428729b.js.map": "/Protifolio/static/js/main.f428729b.js.map"
   },
   "entrypoints": [
-    "static/js/main.b7729fd2.js"
+    "static/js/main.f428729b.js"
   ]
 }
