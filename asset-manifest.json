@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/Portfolio/static/js/main.ccddc1e3.js",
+    "static/media/Badal.png": "/Portfolio/static/media/Badal.3a4857b56e819f2bf22a.png",
+    "static/media/safezone.png": "/Portfolio/static/media/safezone.3fd2a0c505ce362f6516.png",
+    "static/media/wipro.jpg": "/Portfolio/static/media/wipro.001319f84d7f09294a9e.jpg",
+    "static/media/selsca.png": "/Portfolio/static/media/selsca.bb9dd0262f908a340730.png",
+    "static/media/RCTS.png": "/Portfolio/static/media/RCTS.6239f6ed54ce514d2d89.png",
+    "static/media/club.png": "/Portfolio/static/media/club.250c33c4c9eb04166b15.png",
+    "static/media/tabot.png": "/Portfolio/static/media/tabot.c71ab93058a62fd48a23.png",
+    "index.html": "/Portfolio/index.html",
+    "main.ccddc1e3.js.map": "/Portfolio/static/js/main.ccddc1e3.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ccddc1e3.js"
+  ]
+}
