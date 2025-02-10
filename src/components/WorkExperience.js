@@ -1,6 +1,9 @@
 import React from 'react';
-import { Typography, Box, Grid } from '@mui/material';
+import { Typography, Box, Grid, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import WorkIcon from '@mui/icons-material/Work';
+import RCTSLogo from '../assets/RCTS.png';
+import Wiprologo from '../assets/wipro.jpg'
 
 const workExperiences = [
   {
@@ -13,7 +16,7 @@ const workExperiences = [
       'Contributed to the Badal platform for NGO collaboration.',
       'Technologies: MERN Stack, ELK Stack, GitLab, NLP, FARM Stack.',
     ],
-    image: 'https://via.placeholder.com/150/4CAF50/FFFFFF?text=RCTS',
+    image: RCTSLogo, // Updated logo with reduced size
   },
   {
     title: 'Software Intern',
@@ -23,16 +26,16 @@ const workExperiences = [
       'Developed an online vegetable marketplace with AngularJS and Spring Boot.',
       'Deployed the application on Google Cloud Platform (GCP).',
     ],
-    image: 'https://via.placeholder.com/150/FF9800/FFFFFF?text=Wipro',
+   
+   image: Wiprologo
   },
 ];
 
 const WorkExperience = () => {
   const theme = useTheme();
-
   return (
-    <section id="work-experience" style={{ padding: '4rem 0' }}>
-      <Typography variant="h4" align="center" gutterBottom>
+    <section id="work-experience" style={{ padding: '4rem 0', backgroundColor: theme.palette.background.default }}>
+      <Typography variant="h3" align="center" gutterBottom sx={{ fontWeight: 'bold', color: theme.palette.primary.main }}>
         Work Experience
       </Typography>
       <Grid container spacing={4} justifyContent="center">
@@ -42,14 +45,14 @@ const WorkExperience = () => {
               sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'space-between',
+                alignItems: 'flex-start',
                 padding: '2rem',
                 borderRadius: '16px',
                 bgcolor: theme.palette.background.paper,
                 boxShadow: theme.shadows[3],
                 border: `1px solid ${theme.palette.divider}`,
-                transition: '0.3s ease',
-                height: '100%', // Ensures all boxes take up equal height
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                height: '100%',
                 '&:hover': {
                   transform: 'translateY(-8px)',
                   boxShadow: theme.shadows[6],
@@ -57,35 +60,43 @@ const WorkExperience = () => {
                 },
               }}
             >
+              {/* Image */}
               <Box
                 component="img"
                 src={experience.image}
-                alt={experience.company}
+                alt={`${experience.title} at ${experience.company}`}
                 sx={{
-                  width: '80px',
-                  height: '80px',
-                  borderRadius: '50%',
-                  margin: '0 auto 1rem',
-                  display: 'block',
-                  border: `2px solid ${theme.palette.primary.main}`,
+                  width: experience.image === RCTSLogo ? '2000px' : '100%',
+                  height: experience.image === RCTSLogo ? '100px' : '150px',
+                  objectFit: 'contain',
+                  borderRadius: '8px',
+                  marginBottom: '1rem',
+                  alignSelf: experience.image === RCTSLogo ? 'center' : 'flex-start',
                 }}
               />
-              <Typography variant="h6" color={theme.palette.primary.main} gutterBottom>
+              {/* Job Title */}
+              <Typography variant="h5" color={theme.palette.primary.main} gutterBottom sx={{ fontWeight: 'bold' }}>
                 {experience.title}
               </Typography>
-              <Typography variant="subtitle2" color={theme.palette.text.secondary}>
+              {/* Company Name */}
+              <Typography variant="subtitle1" color={theme.palette.text.secondary} gutterBottom>
                 {experience.company}
               </Typography>
+              {/* Date */}
               <Typography variant="body2" color={theme.palette.text.disabled} gutterBottom>
                 {experience.date}
               </Typography>
-              <ul style={{ paddingLeft: '1.2rem', marginTop: '1rem', color: theme.palette.text.secondary }}>
+              {/* Description List */}
+              <List dense sx={{ width: '100%', marginTop: '1rem', color: theme.palette.text.secondary }}>
                 {experience.description.map((item, i) => (
-                  <li key={i} style={{ marginBottom: '0.5rem', fontSize: '0.9rem' }}>
-                    {item}
-                  </li>
+                  <ListItem key={i} disablePadding>
+                    <ListItemIcon sx={{ minWidth: '30px', color: theme.palette.primary.main }}>
+                      <WorkIcon fontSize="small" />
+                    </ListItemIcon>
+                    <ListItemText primary={item} sx={{ fontSize: '0.9rem' }} />
+                  </ListItem>
                 ))}
-              </ul>
+              </List>
             </Box>
           </Grid>
         ))}

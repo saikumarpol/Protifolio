@@ -9,7 +9,7 @@ const publications = [
       'Co-authored a research paper on developing a framework that uses NLP and computer vision tools to automate continuous formative assessments in classrooms.',
       'Published in collaboration with RCTS, IIIT Hyderabad.',
     ],
-    link: 'https://your-research-paper-link.com', // Replace with your actual paper link
+    link: 'https://ieeexplore.ieee.org/document/10834316', // Replace with your actual paper link
    image: `${process.env.PUBLIC_URL}/paper.jpg`
   },
 ];
@@ -19,9 +19,19 @@ const Publication = () => {
 
   return (
     <section id="publications" style={{ padding: '4rem 2rem' }}>
-      <Typography variant="h4" align="center" gutterBottom>
-        Publications
-      </Typography>
+      <Typography
+                   variant="h3"
+                   align="center"
+                   gutterBottom
+                   sx={{
+                     fontWeight: "bold",
+                     color: theme.palette.primary.main,
+                     
+                     letterSpacing: "2px",
+                   }}
+                 >
+                   PUblications
+                 </Typography>
       {publications.map((publication, index) => (
         <Box
           key={index}

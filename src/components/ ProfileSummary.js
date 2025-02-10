@@ -54,7 +54,7 @@ const ProfileSummary = () => {
         </Grid>
         <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
           <img
-            src={`${process.env.PUBLIC_URL}/profile1.jpg`}  // Ensure to uncomment this line to use your image
+            src={`${process.env.PUBLIC_URL}/pic.jpeg`}  // Ensure to uncomment this line to use your image
             alt="Profile"
             style={{
               borderRadius: '8px', // Rounded corners

@@ -23,7 +23,17 @@ const Skills = () => {
 
   return (
     <section id="skills" style={{ padding: '4rem 0' }}>
-      <Typography variant="h4" align="center" gutterBottom>
+      <Typography
+        variant="h3"
+        align="center"
+        gutterBottom
+        sx={{
+          fontWeight: "bold",
+          color: theme.palette.primary.main,
+          
+          letterSpacing: "2px",
+        }}
+      >
         Skills
       </Typography>
       <Grid container spacing={3} justifyContent="center">
