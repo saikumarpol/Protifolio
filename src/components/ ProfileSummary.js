@@ -24,7 +24,11 @@ const ProfileSummary = () => {
             Software Development Engineer
           </Typography>
           <Typography variant="body1" color="text.secondary">
-          A tech enthusiast with a strong foundation in Data Structures and Algorithms. Experienced in developing and debugging code with the ability to quickly learn and master new technologies. Proficient in understanding and translating business requirements into technical solutions. Adept at implementing CI/CD pipelines and deploying scalable applications.
+          Tech Enthusiast | Full-Stack Developer
+
+Passionate about building scalable and efficient solutions, I have a strong foundation in Data Structures and Algorithms and hands-on experience in React.js, Node.js, Express.js, and MongoDB. I excel in developing and debugging code while quickly adapting to new technologies.
+
+I specialize in translating business requirements into technical solutions, implementing CI/CD pipelines, and deploying scalable applications. Always eager to learn and innovate, I strive to build high-performance systems that make an impact.
 
           </Typography>
 
